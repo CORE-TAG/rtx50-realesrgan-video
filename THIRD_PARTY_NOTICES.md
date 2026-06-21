@@ -2,6 +2,8 @@
 
 This repository contains glue scripts, benchmark harnesses, and experimental code. It does not redistribute third-party binaries, models, video files, TensorRT engines, virtual environments, or downloaded source trees.
 
+GitHub Release zip assets may bundle FFmpeg and RealESRGAN-ncnn-vulkan for zero-install convenience. Those binaries remain governed by their upstream licenses and include their upstream license/readme files inside the portable package.
+
 ## Runtime Dependencies
 
 Users must obtain these separately:
@@ -32,4 +34,3 @@ Some files in `experiments/trt_srvgg_plugin` are modified from NVIDIA CUTLASS ex
 ## Models
 
 No model weights are included. Users should download or export their own models and verify the redistribution terms for those models.
-

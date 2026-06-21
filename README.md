@@ -88,6 +88,18 @@ This path uses FFmpeg `mpdecimate` and `realesrgan-ncnn-vulkan`.
   -Av1Mode nvenc-highest
 ```
 
+## Portable GUI Release
+
+The GitHub Release zip is the easiest path for non-developers:
+
+```text
+Start-GUI.bat
+```
+
+The portable package bundles FFmpeg and RealESRGAN-ncnn-vulkan. It does not require Python, TensorRT, VapourSynth, SVP, CUDA Toolkit, or Visual Studio for the GUI workflow. A working GPU driver is still required; NVIDIA AV1 NVENC modes also require AV1-capable NVIDIA NVENC hardware and driver support.
+
+See `docs/PORTABLE_GUI.md`.
+
 Expected tool layout:
 
 ```text
@@ -115,4 +127,3 @@ Use this section as a research trail, not as a recommended production path.
 ## License
 
 Project glue code and documentation are MIT licensed. Some experimental CUTLASS-derived files retain NVIDIA's BSD-3-Clause headers. See `THIRD_PARTY_NOTICES.md`.
-
