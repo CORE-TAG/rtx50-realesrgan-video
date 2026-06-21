@@ -27,7 +27,15 @@ if (-not $Git) {
 & gh auth status | Out-Null
 
 $Visibility = if ($Private) { "--private" } else { "--public" }
-$ExistingOrigin = (& git remote get-url origin 2>$null)
+$ExistingOrigin = ""
+try {
+    $ExistingOrigin = (& git remote get-url origin 2>$null)
+    if ($LASTEXITCODE -ne 0) {
+        $ExistingOrigin = ""
+    }
+} catch {
+    $ExistingOrigin = ""
+}
 if ([string]::IsNullOrWhiteSpace($ExistingOrigin)) {
     & gh repo create $RepoName $Visibility --source . --remote origin --push
 } else {
@@ -41,4 +49,3 @@ try {
 } catch {
     Write-Warning "Repository pushed, but setting topics failed: $($_.Exception.Message)"
 }
-
