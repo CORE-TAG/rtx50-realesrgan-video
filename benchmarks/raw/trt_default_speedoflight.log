@@ -1,0 +1,12 @@
+==WARNING== No metrics to collect found in sections.
+==PROF== Connected to process 23252 (C:\Program Files\SVP 4\rife\vsmlrt-cuda\trtexec.exe)
+==PROF== Profiling "sm80_xmma_fprop_implicit_gemm..." - 0 (1/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "copyPackedKernel" - 1 (2/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "sm80_xmma_fprop_implicit_gemm..." - 2 (3/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "copyPackedKernel" - 3 (4/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "sm80_xmma_fprop_implicit_gemm..." - 4 (5/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "copyPackedKernel" - 5 (6/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "sm80_xmma_fprop_implicit_gemm..." - 6 (7/8): 0%....50%....100% - 1 pass
+==PROF== Profiling "copyPackedKernel" - 7 (8/8): 0%....50%....100% - 1 pass
+==PROF== Disconnected from process 23252
+==PROF== Report: <workspace>\work\trt_default_speedoflight.ncu-rep

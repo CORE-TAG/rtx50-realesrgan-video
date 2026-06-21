@@ -1,0 +1,7 @@
+==PROF== Connected to process 30356 (C:\Program Files\SVP 4\rife\vsmlrt-cuda\trtexec.exe)
+==PROF== Profiling "sm80_xmma_fprop_implicit_gemm..." - 0 (1/4): 0%....50%....100% - 9 passes
+==PROF== Profiling "copyPackedKernel" - 1 (2/4): 0%....50%....100% - 9 passes
+==PROF== Profiling "sm80_xmma_fprop_implicit_gemm..." - 2 (3/4): 0%....50%....100% - 9 passes
+==PROF== Profiling "copyPackedKernel" - 3 (4/4): 0%....50%....100% - 9 passes
+==PROF== Disconnected from process 30356
+==PROF== Report: <workspace>\work\trt_default_sol_occ.ncu-rep

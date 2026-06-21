@@ -1,0 +1,41 @@
+# Local tools and downloaded dependencies
+/tools/
+/models/*
+!/models/.gitkeep
+
+# Generated data
+/.cache/
+/work/
+/output/
+/benchmarks/*.ncu-rep
+
+# TensorRT / model artifacts
+*.engine
+*.plan
+*.cache
+*.timing.cache
+*.onnx
+*.onnx.data
+*.pth
+*.pt
+*.safetensors
+
+# Native build outputs
+*.dll
+*.lib
+*.exp
+*.obj
+*.pdb
+*.exe
+*.so
+*.dylib
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs too large or machine-local by default
+*.ncu-rep
+*.etl
